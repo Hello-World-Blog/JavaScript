@@ -1,20 +1,38 @@
+// Statements
 alert('Hello World');
-//Delimiter examples
-//ex-1
+// ----------------------------------------------------------------------
+
+// Delimiter examples
+
+// ex-1
 alert("Hello")
 alert("JavaScript")
-//ex-2
+
+// ex-2
 alert("Hello World")
 [1,2].forEach(alert)//Check whether you are getting error or not..
-//Variables
-//let example
+
+// ---------------------------------------------------------------------
+
+// Variables
+
+// let example
+
 let message;
 message="Horray, i know about let variable";
 alert(message);
-//var example
+
+// ---------------------------------------------------------------------
+
+// var example
+
 var message="Hello"
 console.log(message);
+
+// ---------------------------------------------------------------------
+
 //Using both var and let-example
+
 var x=3;
 let y=1;
 for(i=0;i<3;i++){
@@ -25,51 +43,80 @@ for(i=0;i<3;i++){
 }
 console.log(x)//4
 console.log(y)//1
-//const example
+
+// ---------------------------------------------------------------------
+
+// const example
+
 const gender = "female";
 console.log(gender);//Try to modify constant variable than you will definitely get an error
-//Data Types
-//Dynamic type example
+
+// ---------------------------------------------------------------------
+
+// Data Types
+// Dynamic type example
+
 let x;
 x=6;
 x="Madhuri";//now print the message each and every time you modify it and check the output
-//Strings example
+
+// Strings example
+
 const str = "hii";
 console.log(str);
-//Numbers example
+
+// Numbers example
+
 let y=6.99;
 console.log(y);
-//Combination of both number and string-example
+
+// Combination of both number and string-example
+
 let x = 10 + 2 + "Manasa" //output-12Manasa
 let y = "Manasa" + 10 + 2 //output-Manasa102
-//Boolean example
+
+// Boolean example
+
 let x = 6;
 let y = 7;
 if (x == y)
 return true;
 else
 return false;
-//Arrays example
+
+// Arrays example
+
 let employees = ["Tarun", "Vamsi", "Surya"];
 console.log(employees[0]);
-//Adding a element in a array-example
+
+// Adding a element in a array-example
 employees[3]="Charishma";
-//Array constructor creation -example
+
+// Array constructor creation -example
 let employees = new Array("Tarun", "Vamsi", "Surya");
-//Objects example
+
+// Objects example
+
 let person = {
 firstName:"Charishma",
 lastName:"Prathipati",
  age:20,
  changeAddress: function() {
- //lines of code
+ // lines of code
  }
-};//In function print your own address using console.log
-//Accessing properties and methods of an object -example
+};// In function print your own address using console.log
+
+// Accessing properties and methods of an object -example
+
 person.firstName;
 person.changeAddress();
-//Conditionals
-//If statement -example
+
+// ---------------------------------------------------------------------
+
+// Conditionals
+
+// If statement -example
+
 const str= 'Malayalam';
 let count=9;
 let len=str.length;
@@ -77,7 +124,11 @@ if(count == len)
 {
 console.log("The string length is equal to count number");
 }
-//If-Else statement -example
+
+// ---------------------------------------------------------------------
+
+// If-Else statement -example
+
 const str= 'Malayalam';
 let count=8;
 let len=str.length;
@@ -89,7 +140,11 @@ else
 {
 console.log("The string length is not equal to count number");
 }
-//If-Else If-Else statement example
+
+// ---------------------------------------------------------------------
+
+// If-Else If-Else statement example
+
 let marks=50;
 if(marks>=80)
 {
@@ -103,7 +158,11 @@ else
 {
 console.log("You are failed");
 }
-//Switch statement-example
+
+// ---------------------------------------------------------------------
+
+// Switch statement-example
+
 let grade='A';
 switch(grade)
 {
@@ -119,8 +178,13 @@ switch(grade)
   break;
   default: document.write("Unknown grade");
 }
-//Loops
+
+// ---------------------------------------------------------------------
+
+// Loops
+
 // For loop -example
+
 let str='Malayalam';
 var count=0;
 let len=str.length;
@@ -137,7 +201,11 @@ for ( let i=0; i<len; i++)
    }
 }
 print(count);//o/p-9
-//For/In loop example
+
+// ---------------------------------------------------------------------
+
+// For/In loop example
+
 let property;
 let person = { firstName : "Charishma", lastName : "Prathipati", age : 20};
 for (property in person)
@@ -148,38 +216,60 @@ for (property in person)
 /* output-firstName
           lastName
           age */
-//For/Of loop example
+
+// ---------------------------------------------------------------------
+
+// For/Of loop example
+
 let languages = ['C', 'Python', 'Java', 'JavaScript'];
 let x;
 for(x of languages)
 {
   console.log(x + "<br/>");
 }
-//ForEach Example
+
+// ---------------------------------------------------------------------
+
+// ForEach Example
+
 let numbers = [1,2,3];
 numbers.forEach((item) =>
  {
     console.log(item);
 });      
 //123
-//While loop example
+
+// ---------------------------------------------------------------------
+
+// While loop example
+
 num=1
 while(num<5){
   console.log(num);
   num++; //1 to 4 numbers will be the output
 }
-//Do-While Loop example
+
+// ---------------------------------------------------------------------
+
+// Do-While Loop example
+
 var num=1
 do{
   console.log(num);
   num++;
 }
 while(num<5) //1 to 4 numbers will be the output
+
+// ---------------------------------------------------------------------
+
 //Functions example
+
 function palindrome(str){
 //Lines of code to be executed
 }
+
 //Let's see the code that covers the basic concepts
+
 function palindrome(str1)
 {
  const str=str1;
@@ -199,4 +289,3 @@ function palindrome(str1)
 
 }
 palindrome('malayalam');
-
